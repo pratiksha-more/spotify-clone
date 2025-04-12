@@ -1,0 +1,196 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+  padding: 0.5rem; /* 8px */
+}
+
+.sidebar {
+  width: 340px;
+  border-radius: 1 rem; /* 16px */
+  background-color: #000000;
+  margin: 0.5rem;
+}
+.main-content {
+  background-color: #000000;
+  flex: 1; /*All Remaining Space */
+  overflow: auto; /* Scrollable if needed */
+  padding: 0 1.5rem 0 1rem;
+}
+.music-player {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 72px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.nav {
+  background-color: #121212;
+  border-radius: 1rem; /* 16px */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50px;
+  margin: 1px;
+  padding: 0.5rem 0.75rem; /* 8px */
+}
+
+.nav-option {
+  line-height: 2.5rem; /* 40px */
+  opacity: 0.7;
+  padding: 0.5rem 0.75rem;
+}
+
+.nav-option i {
+  font-size: 1.25rem;
+}
+
+.nav-option a {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.nav-option:hover {
+  opacity: 1;
+}
+
+.library {
+  background-color: #121212;
+  border-radius: 1rem; /* 16px */
+  height: 100%;
+  margin: 0.5rem;
+}
+
+.option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lib-option img {
+  width: 1.25rem;
+  height: 1.25rem;
+  /* 16px */
+}
+
+.icons {
+  font-size: 1.25rem;
+  display: flex;
+}
+
+.icons i {
+  opacity: 0.7;
+  margin: 1rem;
+}
+
+.icons i:hover {
+  opacity: 1;
+}
+
+.box {
+  background-color: #232323;
+  height: 8rem;
+  border-radius: 1rem; /* 16px */
+  margin: 0.75rem 0 0.75rem 0; /* 4px */
+  padding: 0.75rem 1.5rem; /* 16px */
+}
+
+.box-p1 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem; /* 8px */
+}
+
+.box-p2 {
+  font-size: 0.75rem;
+  opacity: 0.9;
+}
+
+.badge {
+  background-color: #fff;
+  border: none;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  border-radius: 100px; /* 16px */
+  padding: 0.25rem 1rem; /* 8px */
+  font-weight: 700;
+  margin: 0.5rem;
+  height: 2rem; /* 32px */
+}
+
+.dark-badge {
+  background-color: #121212;
+  color: #fff;
+}
+
+/* .dark-badge i {
+  margin-left: 5px;
+} */
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  background-color: #121212;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0 1rem 0;
+}
+
+.sticky-nav-icon {
+  margin-left: 0.75rem; /* 12px */
+}
+
+.sticky-nav-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item {
+  margin-right: 1rem;
+}
+
+@media (max-width: 1000px) {
+  .hide {
+    display: none;
+  }
+}
+
+.card {
+  background-color: #121212;
+  width: 150px;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.card-container {
+  display: flex;
+}
+
+.card-img {
+  width: 100%;
+
+  border-radius: 0.5rem;
+}
+
+.card-title {
+  font-weight: 500;
+}
+
+.card-info {
+  font-size: 0.85rem;
+  opacity: 0.5;
+}
